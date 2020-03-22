@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.him.view.AddCustomerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+            <!-- TITLE CONTACT DETAILS-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    style="@style/text_extra_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT DETAILS" />
+
+            </RelativeLayout>
+
+            <!-- NAME-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    style="@style/text_extra_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_rounded_corner_layouts"
+                    android:hint="Name*"
+                    android:padding="@dimen/_8sdp" />
+
+            </RelativeLayout>
+
+            <!-- MOBILE NO-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    style="@style/text_extra_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_rounded_corner_layouts"
+                    android:hint="Mobile No*"
+                    android:padding="@dimen/_8sdp" />
+
+            </RelativeLayout>
+
+            <!-- TITLE ADDRESS-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    style="@style/text_extra_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADDRESS" />
+
+            </RelativeLayout>
+
+            <!-- PIN CODE-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    style="@style/text_extra_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_rounded_corner_layouts"
+                    android:hint="Pin Code*"
+                    android:padding="@dimen/_8sdp" />
+
+            </RelativeLayout>
+
+            <!-- ADDRESS (house no, ) -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    style="@style/text_extra_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_rounded_corner_layouts"
+                    android:hint="Address (House no, Building, Street, Area)*"
+                    android:padding="@dimen/_8sdp" />
+
+            </RelativeLayout>
+
+            <!-- LOCALITY -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    style="@style/text_extra_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_rounded_corner_layouts"
+                    android:hint="Locality/Town*"
+                    android:padding="@dimen/_8sdp" />
+
+            </RelativeLayout>
+
+            <!-- DISTRICT ANS STREET-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <!-- CITY -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        style="@style/text_extra_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_rounded_corner_layouts"
+                        android:hint="City/District*"
+                        android:padding="@dimen/_8sdp" />
+
+                </RelativeLayout>
+
+                <!-- STATE -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        style="@style/text_extra_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_rounded_corner_layouts"
+                        android:hint="State*"
+                        android:padding="@dimen/_8sdp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- SAVE ADDRESS AS-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/grey"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    style="@style/text_extra_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT DETAILS" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <!-- Our custom radios here. One for male one for female -->
+                    <com.him.utils.MyRadioButton
+                        android:id="@+id/rad_collectnow"
+                        style="@style/MyCustomRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="12dp"
+                        android:checked="true"
+                        android:minWidth="70dp"
+                        android:text="Home" />
+
+                    <com.him.utils.MyRadioButton
+                        android:id="@+id/rad_collectlatter"
+                        style="@style/MyCustomRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="12dp"
+                        android:minWidth="70dp"
+                        android:text="Work" />
+
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddAddress"
+            style="@style/font_title"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/colorAccent"
+            android:text="ADD ADDRESS"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgLtwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/font_title"
+                    android:id="@+id/txtBrandName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/proximanova_bold"
+                    android:textColor="@color/grey_black"
+                    android:text="BrandName" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_bookmark" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/_3sdp"
+                android:id="@+id/txtProductName"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black2"
+                android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/_9sdp"
+                android:layout_height="wrap_content"
+                android:text="Product name" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_3sdp"
+                android:id="@+id/txtPrice"
+                android:fontFamily="@font/proximanova_bold"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="2535" />
+
+            <TextView
+                android:id="@+id/txtFewLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_9sdp"
+                android:fontFamily="@font/proximanova_bold"
+                android:textColor="@color/colorAccent"
+                android:text="Only few left" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
